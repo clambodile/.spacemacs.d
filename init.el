@@ -511,7 +511,10 @@ This function is called at the very end of Spacemacs initialization."
      ("XXX+" . "#dc752f")
      ("\\?\\?\\?+" . "#dc752f")))
  '(org-capture-templates
-   '(("j" "journal entry" plain
+   '(("f" "fragment" plain
+      (file "~/writings/fragments.txt")
+      "" empty-lines-before\  2)
+     ("j" "journal entry" plain
       (file "~/writings/everything.org")
       "%<%Y-%m-%d %H:%M> | %?" :empty-lines-before 1)))
  '(package-selected-packages
